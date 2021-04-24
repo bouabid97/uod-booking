@@ -1,0 +1,59 @@
+ *{
+     font-family: 'roboto';
+     margin:0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ .container{
+
+background-image:linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url("./assets/dunapic.jpg");
+height: 100vh;
+width: 100%;
+
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  position: relative;
+ }
+ .container h2{
+     
+   
+    color:#ffffffe3;
+    
+    z-index: 100;
+    font-size: 3rem;
+    font-weight: 600;
+ }
+ .options-wrap button{
+     margin: 40px 20px;
+     
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     align-items: center;
+     height: 50px;
+     width: 240px;
+     border:1px solid;
+     border-radius: 6px;
+     background: transparent;
+     font-weight: 900;
+     font-size: 1.2rem;
+     color: rgba(245, 245, 245, 0.9);
+ }
+ .options-wrap button:hover{
+     color:#ffffffe3;
+     background: rgba(0,0,0,.5);
+ }
+ div.options-wrap{
+     display: flex;
+ }
