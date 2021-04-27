@@ -1,0 +1,108 @@
+#btn{
+  position:fixed;
+  right:10px;
+  top:5px;
+  background: #222;
+  height: 40px;
+  min-width: 80px;
+  border: none;
+  border-radius: 10px;
+  color: #eee;
+  font-size: 20px;
+  font-family: 'Cookie', cursive;
+  transition: 1s;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-top: 5px;
+}
+#btn #circle {
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  transition: 500ms;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+#btn:hover {
+  background: transparent;
+}
+
+#btn:hover #circle {
+  height: 40px;
+  width: 80px;
+  left: 0;
+  border-radius: 0;
+  border-bottom: 2px solid #eee;
+}
+*{
+     font-family: 'roboto';
+     margin:0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ .container{
+
+background-image:linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url("../images/dunapic.jpg");
+height: 100vh;
+width: 100%;
+
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  position: relative;
+ }
+ .container h2{  
+    color:#ffffffe3;
+    z-index: 100;
+    font-size: 3rem;
+    font-weight: 600;
+ }
+ .options-wrap button{
+     margin: 40px 20px;
+     
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     align-items: center;
+     height: 50px;
+     width: 240px;
+     border:1px solid;
+     border-radius: 6px;
+     background: transparent;
+     font-weight: 900;
+     font-size: 1.2rem;
+     color: rgba(245, 245, 245, 0.9);
+ }
+ .options-wrap button:hover{
+     color:#ffffffe3;
+     background: rgba(0,0,0,.5);
+ }
+ div.options-wrap{
+     display: flex;
+ }
